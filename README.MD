@@ -18,8 +18,16 @@ Put the IP ranges inside `ip-list.txt`, then run the project with this command:
 
 ------------
 Download country IP ranges from (CIDR):
+
 [Website 1](http://www.ipaddresslocation.org/ip_ranges/get_ranges.php "Website 1")
+
 [Website 2](https://www.ip2location.com/free/visitor-blocker "Website 2")
 
+------------
+
+## My changes:
+- Scan all IPs without any limitation.
+- Find more proxies.
+- Fix runtime errors.
 ------------
 ###### Edited by [MasterkinG32](http://github.com/masterking32 "MasterkinG32")

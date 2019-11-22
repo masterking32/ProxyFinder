@@ -15,6 +15,7 @@ reset = Style.RESET_ALL
 home = os.path.dirname(os.path.abspath(__file__))
 work = home + '\\'
 pfile = work + 'proxy-available.txt'
+pfile2 = work + 'proxy-suspicious.txt'
 def scan(network):
     hcount = 0
     hosts = IPNetwork(network)
@@ -53,7 +54,6 @@ def target(ip):
                     with open(pfile, 'a+') as pf2:
                         pf2.write("[" + stype.upper() + "] - http " + str(ip) + ":" + str(port) + "\n")
                 else:
-                    # Check for SOCKS services
                     try:
                         from prox_check import is_prox
                         p_str = "http://" + str(ip) + ":" + str(port)
@@ -63,7 +63,7 @@ def target(ip):
                             with open(pfile, 'a+') as pf3:
                                 pf3.write("[" + stype.upper() + "] - http " + str(ip) + ":" + str(port) + "\n")
                         else:
-                            with open(pfile, 'a+') as pf4:
+                            with open(pfile2, 'a+') as pf4:
                                 pf4.write("[-] - http " + str(ip) + ":" + str(port) + "\n")
                             pass
                     except Exception as e:

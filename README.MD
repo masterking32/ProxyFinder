@@ -27,7 +27,7 @@ Download country IP ranges from (CIDR):
 
 ## My changes:
 - Scan all IPs without any limitation.
-- Find more proxies.
+- Save suspicious IPs.
 - Fix runtime errors.
 ------------
 ###### Edited by [MasterkinG32](http://github.com/masterking32 "MasterkinG32")
